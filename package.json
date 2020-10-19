@@ -2,7 +2,7 @@
   "name": "website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://avaspataru.github.io/website/",
+  "homepage": "https://avaspataru.github.io/",
   "dependencies": {
     "react": "^16.12.0",
     "react-dom": "^16.12.0",

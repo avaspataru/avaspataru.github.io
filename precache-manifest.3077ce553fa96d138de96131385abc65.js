@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bde9913fb2577a4946f0e1240f301254",
+    "revision": "97d1fabc69c498ee62481632b5700991",
     "url": "/index.html"
   },
   {
-    "revision": "9f6a38b3d81ead80f2f8",
-    "url": "/static/css/main.5f361e03.chunk.css"
+    "revision": "e9309cfe042527686d10",
+    "url": "/static/css/main.9851faaf.chunk.css"
   },
   {
     "revision": "a916f7cf019488a0bda1",
@@ -16,12 +16,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.4a6105e6.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9f6a38b3d81ead80f2f8",
-    "url": "/static/js/main.9054d513.chunk.js"
+    "revision": "e9309cfe042527686d10",
+    "url": "/static/js/main.a1372345.chunk.js"
   },
   {
     "revision": "ba126735810163618457",
     "url": "/static/js/runtime-main.3374ac37.js"
+  },
+  {
+    "revision": "630081ff676104068d370e9e9a16c6a7",
+    "url": "/static/media/bkgr-newspapers.630081ff.jpg"
   },
   {
     "revision": "5d5d9eefa31e5e13a6610d9fa7a283bb",

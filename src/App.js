@@ -4,14 +4,13 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Welcome! This is a work in progress.
-        </p>
-
-      </header>
+    <div className="section">
+        <div className="welcome-text">
+          <h1> Hi. I'm Ava! </h1>
+          <h3 class="line-1 anim-typewriter">Software Engineer & Computational Biologist.</h3>
+        </div>
     </div>
+
   );
 }
 

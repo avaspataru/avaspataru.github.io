@@ -18,11 +18,18 @@ h1{
   font-size:40pt;
 }
 
+.container{
+  background-color: #eaeaea;
+  display: block;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+
 .section {
   height:100%;
   width: 100%;
-  position: fixed;
-  text-align: center;
+
   background-image:url("./bkgr-newspapers.jpg");
   background-size: cover; /* or contain depending on what you want */
   background-position: center center;
@@ -30,14 +37,28 @@ h1{
   color: white;
 }
 
+.section-2{
+  height:100%;
+  width:100%;
+
+  background-color:blue;
+}
+
+.section-3{
+  height:100%;
+  width:100%;
+
+  background-color:green;
+}
+
 .welcome-text{
   width: fit-content;
   margin: auto;
   text-align:left;
-  position: absolute;
-  margin-left:15%;
+  position: relative;
+  display:inline-block;
   top: 30%;
-
+  margin-left:15%;
 }
 
 
@@ -78,8 +99,6 @@ h1{
     to   { opacity: 0.75; }
 }
 
-
-
 .down-icon{
   width: 15%;
   margin-left:10%;
@@ -88,8 +107,8 @@ h1{
 }
 
 .down-icon:hover{
-  width: 18%;
-  margin-left:9%;
+  width: 16%;
+  margin-left:9.5%;
   margin-top: 18px;
   opacity: 1;
 
@@ -97,12 +116,13 @@ h1{
 
 .social{
   width:50px;
+  height: min-content;
   float:right;
   margin-right:2%;
-  top: 40%;
-  position:relative;
-  transform: translateY(-30%);
+  top: 30%;
+  position: relative;
   padding:10px;
+
 }
 
 .social-icon{

@@ -66,3 +66,19 @@ h1{
   from{border-right-color: rgba(255,255,255,.75);}
   to{border-right-color: transparent;}
 }
+
+.social{
+  width:50px;
+  float:right;
+  margin-right:2%;
+
+  top: 40%;
+  position:relative;
+  transform: translateY(-30%);
+  padding:10px;
+}
+
+.social-icon{
+  margin: 10px;
+  width: 70%;
+}

@@ -40,9 +40,11 @@ h1{
 .section-2{
   height:100%;
   width:100%;
-
-  background-color:blue;
+  text-align: center;
+  color: black;
+  background-color: white;
 }
+
 
 .section-3{
   height:100%;

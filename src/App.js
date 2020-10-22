@@ -1,4 +1,5 @@
 import React, {useRef} from 'react';
+import { ScrollTo } from 'react-scroll-to';
 import logo from './logo.svg';
 import './App.css';
 
@@ -12,7 +13,7 @@ import down from './dropdown-icon.png';
 
 function App() {
 
-  const scrollToRef = (myRef) => { window.scrollTo({ behavior: 'smooth', top: myRef.current.offsetTop }); }
+  const scrollToRef = (myRef) => { myRef.current.scrollIntoView({behavior: "smooth"}); }
   const myRefS2 = useRef(null)
   const executeScroll = () => {  scrollToRef(myRefS2) }
 
@@ -34,10 +35,9 @@ function App() {
       </div>
 
       <div className="section-2" ref={myRefS2}>
+      <p className="welcome-text"> This is a work in progress. </p>
       </div>
 
-      <div className="section-3">
-      </div>
 
 
     </div>

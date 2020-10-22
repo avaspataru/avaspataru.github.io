@@ -36,8 +36,8 @@ h1{
   text-align:left;
   position: absolute;
   margin-left:15%;
-  top: 40%;
-  transform: translateY(-40%);
+  top: 30%;
+
 }
 
 
@@ -55,7 +55,7 @@ h1{
 
 /* Animation */
 .anim-typewriter{
-  animation: typewriter 4s steps(44) 1s 1 normal both,
+  animation: typewriter 2.5s steps(44) 1s 1 normal both,
              blinkTextCursor 500ms steps(44) infinite normal;
 }
 @keyframes typewriter{
@@ -67,11 +67,38 @@ h1{
   to{border-right-color: transparent;}
 }
 
+.anim-fadein{
+  animation: fadein 4s;
+  animation-delay: 3s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 0.75; }
+}
+
+
+
+.down-icon{
+  width: 15%;
+  margin-left:10%;
+  margin-top: 20px;
+
+}
+
+.down-icon:hover{
+  width: 18%;
+  margin-left:9%;
+  margin-top: 18px;
+  opacity: 1;
+
+}
+
 .social{
   width:50px;
   float:right;
   margin-right:2%;
-
   top: 40%;
   position:relative;
   transform: translateY(-30%);
@@ -81,4 +108,9 @@ h1{
 .social-icon{
   margin: 10px;
   width: 70%;
+}
+
+.social-icon:hover{
+  margin: 2px;
+  width:100%;
 }

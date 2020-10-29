@@ -30,7 +30,7 @@ h1{
   height:100%;
   width: 100%;
 
-  background-image:url("./bkgr-newspapers.jpg");
+  background-image:url("./sky-background.jpg");
   background-size: cover; /* or contain depending on what you want */
   background-position: center center;
   background-repeat: no-repeat;
@@ -42,7 +42,11 @@ h1{
   width:100%;
   text-align: center;
   color: black;
-  background-color: white;
+  background-color: #F3908B;/* #C099B6 purple; /* #FFAD81; orange  /*#F3908B; pink
+  /*background-image:url("./bkgr-city.jpg");*/
+  background-size: cover; /* or contain depending on what you want */
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 
@@ -53,13 +57,23 @@ h1{
   background-color:green;
 }
 
+hr{
+  display: block;
+height: 1px;
+border: 0;
+border-top: 2px solid white;
+margin: 1em 0;
+padding-left: 10px;
+border-radius: 50%;
+}
+
 .welcome-text{
   width: fit-content;
   margin: auto;
   text-align:left;
   position: relative;
   display:inline-block;
-  top: 30%;
+  top: 27%;
   margin-left:15%;
 }
 
@@ -70,7 +84,7 @@ h1{
     width: 24em;
     margin: 0;
     border-right: 2px solid rgba(255,255,255,.75);
-    font-size: 180%;
+    font-size: 160%;
     white-space: nowrap;
     overflow: hidden;
     transform: translateY(-50%);
@@ -85,6 +99,12 @@ h1{
   from{width: 0;}
   to{width: 24em;}
 }
+
+@keyframes unwrite{
+  from{width: 24em;}
+  to{width: 0;}
+}
+
 @keyframes blinkTextCursor{
   from{border-right-color: rgba(255,255,255,.75);}
   to{border-right-color: transparent;}
@@ -135,4 +155,33 @@ h1{
 .social-icon:hover{
   margin: 2px;
   width:100%;
+}
+
+
+.about-me-text{
+
+    float:left;
+    top: 15%;
+    position: relative;
+    width: 700px;
+    display: inline-block;
+    color: white;
+    margin-left:10%;
+}
+
+.about-me-pic-container{
+
+  float:right;
+  position:relative;
+  display:inline-block;
+  top:20%;
+  margin-right: 10%;
+  margin-top: auto;
+  margin-bottom:auto;
+}
+
+.profile-pic{
+  width:400px;
+  border-radius: 50%;
+
 }

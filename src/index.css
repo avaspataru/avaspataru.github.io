@@ -54,8 +54,18 @@ h1{
   height:100%;
   width:100%;
 
-  background-color:green;
+  background-color: white;/*purple; /* #FFAD81; orange  /*#F3908B; pink*/
+  color: #F3908B;
+  /*background-image:url("./bkgr-city.jpg");*/
+  background-size: cover; /* or contain depending on what you want */
+  background-position: center center;
+  background-repeat: no-repeat;
 }
+.ava-bold{
+
+  font-size: 110%;
+}
+
 
 hr{
   display: block;
@@ -161,12 +171,13 @@ border-radius: 50%;
 .about-me-text{
 
     float:left;
-    top: 15%;
+    top: 10%;
     position: relative;
     width: 700px;
     display: inline-block;
     color: white;
     margin-left:10%;
+    text-align: justify;
 }
 
 .about-me-pic-container{
@@ -184,4 +195,34 @@ border-radius: 50%;
   width:400px;
   border-radius: 50%;
 
+}
+
+.where-been-text{
+  top: 10%;
+  position: relative;
+  width: 700px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  background-color: red;
+}
+
+.where-been-list{
+  list-style-type:none;
+  font-size: 110%;
+}
+
+.where-been-box{
+  padding:10px;
+  border-left: 3px solid  white;
+  width: 250px;
+}
+
+.where-been-box-selected{
+  padding:10px;
+  border-left: 3px solid  #F3908B;
+  font-weight: bold;
+  background-color: #f7e5e4;
+  width: 250px;
 }

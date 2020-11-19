@@ -1,23 +1,29 @@
 /* Google Fonts */
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
 
 
 body {
   margin: 0;
-  font-family: 'Anonymous Pro', monospace;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Noto Sans JP', sans-serif;;
 }
 
 h1{
   font-size:40pt;
+  margin-bottom: 0px;
 }
 
+.colourful{
+  color: #9e495e;
+}
+
+.colourful-2{
+  color: #dfbfb5;
+}
+
+.size2{
+  font-size:150%;
+}
 .container{
   background-color: #eaeaea;
   display: block;
@@ -30,7 +36,9 @@ h1{
   height:100%;
   width: 100%;
 
-  background-image:url("./sky-background.jpg");
+  background-image:url("./bkgr-pink-forest.jpg");
+  backdrop-filter: blur(8px);
+
   background-size: cover; /* or contain depending on what you want */
   background-position: center center;
   background-repeat: no-repeat;
@@ -41,8 +49,8 @@ h1{
   height:100%;
   width:100%;
   text-align: center;
-  color: black;
-  background-color: #F3908B;/* #C099B6 purple; /* #FFAD81; orange  /*#F3908B; pink
+  color: white;
+  background-color: #c89180;/* #C099B6 purple; /* #FFAD81; orange  /*#F3908B; pink
   /*background-image:url("./bkgr-city.jpg");*/
   background-size: cover; /* or contain depending on what you want */
   background-position: center center;
@@ -60,6 +68,7 @@ h1{
   background-size: cover; /* or contain depending on what you want */
   background-position: center center;
   background-repeat: no-repeat;
+  text-align: center;
 }
 .ava-bold{
 
@@ -100,6 +109,20 @@ border-radius: 50%;
     transform: translateY(-50%);
 }
 
+h2{
+  display:inline-block;
+}
+
+.moving-text-container{
+  padding-top:0px;
+  top:0px;
+  position:relative;
+}
+.moving-text{
+  padding-left:10px;
+  color:	#9e495e;
+}
+
 /* Animation */
 .anim-typewriter{
   animation: typewriter 2.5s steps(44) 1s 1 normal both,
@@ -116,7 +139,7 @@ border-radius: 50%;
 }
 
 @keyframes blinkTextCursor{
-  from{border-right-color: rgba(255,255,255,.75);}
+  from{border-right-color: white;}
   to{border-right-color: transparent;}
 }
 
@@ -171,13 +194,15 @@ border-radius: 50%;
 .about-me-text{
 
     float:left;
-    top: 10%;
+    top: 5%;
     position: relative;
     width: 700px;
     display: inline-block;
     color: white;
     margin-left:10%;
     text-align: justify;
+    margin-top: auto;
+    margin-bottom:auto;
 }
 
 .about-me-pic-container{
@@ -200,23 +225,32 @@ border-radius: 50%;
 .where-been-text{
   top: 10%;
   position: relative;
-  width: 700px;
+  width: 724px;
   display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
   text-align: justify;
-  background-color: red;
+}
+
+.where-been-text h2{
 }
 
 .where-been-list{
   list-style-type:none;
   font-size: 110%;
+  padding: 0;
+  padding-top:20px;
+  width: fit-content;
+  display:inline-block;
+  position: relative;
 }
+
 
 .where-been-box{
   padding:10px;
   border-left: 3px solid  white;
-  width: 250px;
+  width: 180px;
+  height:40px;
+  border-left: 3px solid #f7e5e4;
+  line-height: 30px;
 }
 
 .where-been-box-selected{
@@ -224,5 +258,23 @@ border-radius: 50%;
   border-left: 3px solid  #F3908B;
   font-weight: bold;
   background-color: #f7e5e4;
-  width: 250px;
+  width: 180px;
+  height:40px;
+  line-height: 30px;
+}
+
+.work-details{
+  display: inline-block;
+  width: 430px;
+  padding:10px;
+  padding-top:20px;
+  margin:0;
+  position: absolute;
+
+  margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+
 }

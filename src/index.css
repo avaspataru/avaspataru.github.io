@@ -94,14 +94,14 @@ a{
   height:100%;
   width:100%;
 
-  background-image:url("./coffee-background.jpg");
+  background-image:url("./coffee-background-right.jpg");
   backdrop-filter: blur(8px);
 
   background-size: cover; /* or contain depending on what you want */
   background-repeat: no-repeat;/*purple; /* #FFAD81; orange  /*#F3908B; pink*/
   /*background-image:url("./bkgr-city.jpg");*/
   background-size: cover; /* or contain depending on what you want */
-  background-position: right 0px bottom 0px;
+  background-position: right 0px top 0px;
   background-repeat: no-repeat;
   text-align: center;
 }
@@ -286,14 +286,13 @@ h2{
   text-align: justify;
 
   float:left;
-  top: 5%;
+  margin-top:-50px;
   position: relative;
-  width: 800px;
+  width: 950px;
   display: inline-block;
   margin-left:10%;
   text-align: right;
-  margin-top: auto;
-  margin-bottom:auto;
+
 }
 .where-been-text h2{
   display:block;
@@ -372,10 +371,6 @@ h2{
   display:inline;
 }
 
-.what-learnt-text h2{
-  display:block;
-}
-
 .badge-c1{
   border-radius:50%;
   background-color:#9c684e;
@@ -410,4 +405,18 @@ h2{
   height:60px;
   text-align:center;
   line-height:60px;
+}
+
+.language-beans{
+  height:250px;
+  margin-right:150px;
+  margin-top:-40px;
+  z-index: -1;
+  position:relative;
+}
+
+.what-learnt-text h2{
+  display:block;
+  z-index:99999;
+  position:relative;
 }

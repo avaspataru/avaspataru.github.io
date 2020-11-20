@@ -10,6 +10,7 @@ import facebook from './facebook-icon.png';
 import email from './email-icon.png';
 import down from './dropdown-icon.png';
 import profile from './profile-glasses.jpeg';
+import beans from './coffe_beans.png';
 
 
 
@@ -147,11 +148,7 @@ function App() {
           <div className="what-learnt-text">
           <h2> <a className="colourful-strong"> <a className="size2"> .. and what I learnt</a> </a></h2>
 
-          <div className="badge-c3">Java</div>
-          <div className="badge-c1">C++</div>
-          <div className="badge-c2">TypeScript</div>
-          <div className="badge-c3">React</div>
-          <div className="badge-c1">Angular</div>
+          <img src={beans} className="language-beans"/>
 
           </div>
         </div>

@@ -1,7 +1,6 @@
 import React, {useRef, useState} from 'react';
 import Typewriter from 'typewriter-effect';
 import { ScrollTo } from 'react-scroll-to';
-import logo from './logo.svg';
 import './App.css';
 
 import github from './github-icon.png';

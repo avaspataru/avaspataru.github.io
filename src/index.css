@@ -298,7 +298,7 @@ h2{
   text-align: justify;
 
   float:left;
-  margin-top:-40px;
+  margin-top:-30px;
   position: relative;
   width: 800px;
   display: inline-block;
@@ -425,7 +425,7 @@ h2{
 .language-beans{
   height:200px;
   margin-right:90px;
-  margin-top:-30px;
+  margin-top:-20px;
   z-index: -1;
   position:relative;
 }

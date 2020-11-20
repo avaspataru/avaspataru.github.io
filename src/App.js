@@ -146,12 +146,19 @@ function App() {
 
         <div className="full-width-container">
           <div className="what-learnt-text">
-          <h2> <a className="colourful-strong"> <a className="size2"> .. and what I learnt</a> </a></h2>
+          <h2> <a className="colourful-strong"> <a className="size2"> ... and what I learnt</a> </a></h2>
 
           <img src={beans} className="language-beans"/>
 
           </div>
         </div>
+      </div>
+
+      <div className="section-4">
+      <div className="about-me-text">
+      <h2> <a className="colourful-strong"> <a className="size2"> Some of the cool stuff I've done.</a> </a></h2>
+      <a className="colourful"><p> Coming soon... This is still a work in progress. </p></a>
+      </div>
       </div>
 
 

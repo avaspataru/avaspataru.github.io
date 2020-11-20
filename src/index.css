@@ -6,10 +6,11 @@
 body {
   margin: 0;
   font-family: 'Noto Sans JP', sans-serif;;
+  font-size:14px;
 }
 
 h1{
-  font-size:40pt;
+  font-size:25pt;
   margin-bottom: 0px;
 }
 
@@ -37,7 +38,9 @@ a{
 }
 
 .size2{
-  font-size:150%;
+  font-size:17pt;
+  font-weight: bold;
+  margin-bottom: 0px;
 }
 .container{
   background-color: #eaeaea;
@@ -48,7 +51,7 @@ a{
 
 .job-header{
   color:  #6a313f;
-  font-size: 120%;
+  font-size: 11pt;
   margin-bottom: 0px;
   margin-top:0px;
 }
@@ -105,9 +108,18 @@ a{
   background-repeat: no-repeat;
   text-align: center;
 }
+
+.section-4{
+  height:100%;
+  width:100%;
+
+  background-color: white;
+}
+
+
 .ava-bold{
 
-  font-size: 110%;
+  font-size: 11pt;
 }
 
 
@@ -138,7 +150,7 @@ border-radius: 50%;
     width: 24em;
     margin: 0;
     border-right: 2px solid rgba(255,255,255,.75);
-    font-size: 160%;
+    font-size: 140%;
     white-space: nowrap;
     overflow: hidden;
     transform: translateY(-50%);
@@ -229,12 +241,12 @@ h2{
 .about-me-text{
 
     float:left;
-    top: 5%;
+    top: 2%;
     position: relative;
-    width: 700px;
+    width: 600px;
     display: inline-block;
     color: #eedbc5;
-    margin-left:10%;
+    margin-left:7%;
     text-align: justify;
     margin-top: auto;
     margin-bottom:auto;
@@ -246,7 +258,7 @@ h2{
   position:relative;
   display:inline-block;
   top:20%;
-  margin-right: 10%;
+  margin-right: 7%;
   margin-top: auto;
   margin-bottom:auto;
 }
@@ -271,11 +283,11 @@ h2{
   text-align: justify;
 
   float:left;
-  top: 5%;
+  top: 2%;
   position: relative;
-  width: 800px;
+  width: 600px;
   display: inline-block;
-  margin-left:10%;
+  margin-left:7%;
   text-align: justify;
   margin-top: auto;
   margin-bottom:auto;
@@ -286,11 +298,11 @@ h2{
   text-align: justify;
 
   float:left;
-  margin-top:-50px;
+  margin-top:-40px;
   position: relative;
-  width: 950px;
+  width: 800px;
   display: inline-block;
-  margin-left:10%;
+  margin-left:0;
   text-align: right;
 
 }
@@ -301,8 +313,9 @@ h2{
 
 .where-been-list{
   list-style-type:none;
-  font-size: 110%;
+  font-size: 11pt;
   padding: 0;
+  padding-top:10px;
   width: fit-content;
   display:inline-block;
   position: relative;
@@ -312,10 +325,10 @@ h2{
 
 .where-been-box{
   padding:10px;
-  width: 180px;
-  height:50px;
+  width: 150px;
+  height:30px;
   border-left: 3px solid #f4e7d9;
-  line-height: 50px;
+  line-height: 30px;
 }
 
 .where-been-box-selected{
@@ -323,16 +336,16 @@ h2{
   border-left: 3px solid #c89180;
   font-weight: bold;
   background-color:#f4e7d9;
-  width: 180px;
-  height:50px;
-  line-height: 50px;
+  width: 150px;
+  height:30px;
+  line-height: 30px;
 }
 
 .work-details{
   display: inline-block;
   width: 540px;
-  padding:10px;
-  padding-top:20px;
+
+  padding-top:10px;
   padding-right:10px;
   margin:0;
   position: absolute;
@@ -345,6 +358,8 @@ h2{
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 40px;
+
+  font-weight: 11pt;
 
 }
 
@@ -408,9 +423,9 @@ h2{
 }
 
 .language-beans{
-  height:250px;
-  margin-right:150px;
-  margin-top:-40px;
+  height:200px;
+  margin-right:90px;
+  margin-top:-30px;
   z-index: -1;
   position:relative;
 }

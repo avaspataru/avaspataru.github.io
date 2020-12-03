@@ -439,6 +439,18 @@ h2{
   /*background-color:	#eedcc6;*/
 }
 
+.section-5{
+  height:100%;
+  width:100%;
+
+  /*background-color: #faf3ed;*/
+  background-image:url("./end.jpg");
+  backdrop-filter: blur(8px);
+
+  background-size: cover;
+  background-position: top right;
+  background-repeat: no-repeat;
+}
 
 .about-projects-text{
   float:left;
@@ -588,7 +600,7 @@ h2{
 }
 
 .project-details h5{
-  font-size: 8pt;
+  font-size: 9pt;
   margin: 0px;
   color:#9e495e;
   opacity: 70%;
@@ -599,7 +611,7 @@ h2{
   position:relative;
 }
 .project-details p{
-  font-size: 8pt;
+  font-size: 9pt;
   color:#6a313f;
 }
 
@@ -621,8 +633,80 @@ h2{
   display:inline-block;
 }
 
+.technology-badges{
+  display: table-row;
+  position: relative;
+}
+
+.tech-badge-h5{
+  margin: 0px;
+  color: #6a313f!important;
+  font-size: 9pt;
+}
+
+.techy-badge{
+  margin-top:10px;
+  margin-left: 10px;
+  background-color: #c89180;
+  font-size: 8pt;
+  display:inline-block;
+  padding:5px;
+  border-radius: 10%;
+  color: white;
+}
+
 .inside-project-details{
   padding-left:20px;
   padding-right:20px;
   padding-bottom:10px;
+}
+
+.connect-container{
+  position: relative;
+  display: block;
+  top: 25%;
+  text-align:center;
+  width:100%;
+  padding:0;
+}
+
+.connect{
+  color: 	#7b482e;
+  font-size: 25pt;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.connect-dot{
+  color: #c8a594;
+  font-size: 30pt;
+  font-weight: bold;
+}
+
+.connect-links{
+  display:block;
+  /*border-top:1.5px solid #a05e3c;*/
+  width:fit-content;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top: 0px;
+  padding-top:10px;
+}
+
+.connect-email{
+  color: #7b482e;
+  font-size:12pt;
+  margin:10px;
+}
+
+.connect-email:hover{
+  color: #7b482e;
+  font-size:12pt;
+  margin:10px;
+  font-weight: bold;
+}
+
+.connect-or{
+  color: #c8a594;
+  font-size:12pt;
 }

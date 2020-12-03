@@ -15,6 +15,7 @@ import glance from './glance.jpg';
 import battleships from './battleships.jpg';
 import crispr from './crispr-analyzer-cover.jpg';
 import cluster from './cluster.jpg';
+import onerail from './onerail.jpg';
 
 function App() {
 
@@ -23,7 +24,7 @@ function App() {
   const executeScroll = () => {  scrollToRef(myRefS2) }
 
   const [selectedWork, setSelectedWork]  = useState("fb")
-  const [selectedProj, setSelectedProj] = useState("battleships")
+  const [selectedProj, setSelectedProj] = useState("crispr")
 
   return (
     <div className="container">
@@ -183,6 +184,18 @@ function App() {
             <p>Description of our solution<a href="https://devpost.com/software/battlereeves">[Devpost]</a></p>
             <p>Source code<a href="https://github.com/alexmotoc/hack-cambridge">[GitHub]</a></p>
           </div>
+
+          <div className="technology-badges">
+            <h5 className="tech-badge-h5"><b> Technologies</b></h5>
+            <div className="techy-badge">Angular.js</div>
+            <div className="techy-badge">HTML</div>
+            <div className="techy-badge">CSS</div>
+            <div className="techy-badge">Java</div>
+            <div className="techy-badge">Keanu</div>
+            <div className="techy-badge">Node js</div>
+            <div className="techy-badge">Typescript</div>
+            <div className="techy-badge">Spring boot</div>
+          </div>
         </div>
         : (selectedProj == "glance") ?
         <div className="inside-project-details">
@@ -195,6 +208,7 @@ function App() {
             <ul className="job-points">
             <p className="job-description"><li>Glance behaves like Google, but for code. It's biggest advantage is that it is optimized for code search, ensuring that if someone had ever published code similar to what you want, you can find it!</li> </p>
             <p className="job-description"><li>There are two ways of using this, you either enter a regular expression and your language of choice, to get any code snippets that match, or you enter a function name and you get all the functions with similar namings. This is especially useful for implementations of common util functions. The search engine also had other nice functionalities embedded such as spelling corrections.</li></p>
+            <p className="job-description"><li>My main contribution was applying the word2vec model to find the function definitions which match the intention behind your function name. </li></p>
             </ul>
           </div>
 
@@ -203,6 +217,19 @@ function App() {
             <h5><b> Read more </b></h5>
             <p>Description of our solution<a href="https://devpost.com/software/glance-5u2arx">[Devpost]</a></p>
             <p>Source code for the interface<a href="https://github.com/avaspataru/hackcambridge101">[GitHub]</a></p>
+          </div>
+
+          <div className="technology-badges">
+            <h5 className="tech-badge-h5"><b> Technologies</b></h5>
+            <div className="techy-badge">Python</div>
+            <div className="techy-badge">word2vec</div>
+            <div className="techy-badge">Elastic Search</div>
+            <div className="techy-badge">React</div>
+            <div className="techy-badge">HTML</div>
+            <div className="techy-badge">CSS</div>
+            <div className="techy-badge">Bing Spell Check</div>
+            <div className="techy-badge">Azure Cognitive Services</div>
+            <div className="techy-badge">Azure Cloud</div>
           </div>
         </div>
         : (selectedProj == "crispr") ?
@@ -226,6 +253,20 @@ function App() {
             <p>Backend extra functionality <a href="https://github.com/avaspataru/SHAP-Value-Plotting-for-CRISPR-tools">[GitHub]</a></p>
             <p>Source code<a href="https://github.com/avaspataru/CRISPR-Analyzer">[GitHub]</a></p>
           </div>
+
+          <div className="technology-badges">
+            <h5 className="tech-badge-h5"><b> Technologies</b></h5>
+            <div className="techy-badge">Python</div>
+            <div className="techy-badge">React</div>
+            <div className="techy-badge">SHAP</div>
+            <div className="techy-badge">scikit-learn</div>
+            <div className="techy-badge">numpy</div>
+            <div className="techy-badge">pandas</div>
+            <div className="techy-badge">matplotlib</div>
+            <div className="techy-badge">Flask API</div>
+            <div className="techy-badge">Bootstrap</div>
+          </div>
+
         </div>
         : (selectedProj == "cluster") ?
         <div className="inside-project-details">
@@ -247,19 +288,69 @@ function App() {
             <p>Source code<a href="https://github.com/avaspataru/ClusterInsight">[GitHub]</a></p>
             <p>Project report<a href="https://github.com/avaspataru/Dissertation/blob/master/Final%20Report.pdf">[PDF]</a></p>
           </div>
+
+          <div className="technology-badges">
+            <h5 className="tech-badge-h5"><b> Technologies</b></h5>
+            <div className="techy-badge">Python</div>
+            <div className="techy-badge">Flask API</div>
+            <div className="techy-badge">Typescript</div>
+            <div className="techy-badge">Angular js</div>
+            <div className="techy-badge">Web Scraper</div>
+          </div>
+        </div>
+        : (selectedProj == "onerail") ?
+        <div className="inside-project-details">
+          <div className="project-details-header">
+            <h4><b>One Rail - chatbot for travelers</b> </h4>
+            <h5>Hack Train VI November 2019</h5>
+          </div>
+
+          <div className="project-details-text">
+            <ul className="job-points">
+            <p className="job-description"><li>A smart chatbot, which makes life easier for those people constantly on the move! Refunds, exchanges and advice!</li> </p>
+            <p className="job-description"><li>OneRail understands what you mean, even when you can't type properly because you are running to not miss your train. It is on your side and will help you exchange/cancel your tickets without any of the worries and none of the fuss! It is a web-based ChatBot, which acts as a friendly network operator, helping you exchange, cancel tickets and get refunds when you need them.</li></p>
+            <p className="job-description"><li>My contribution was in the backend, making and parsing all the SOAP API calls to the Silver Rail application.</li></p>
+
+            </ul>
+          </div>
+
+
+          <div className="project-details-links">
+            <h5><b> Read more </b></h5>
+            <p>Post about implementation<a href="https://devpost.com/software/onerail">[Devpost]</a></p>
+            <p>The hackathon story<a href="https://nathaniel.work/events/2019/11/24/hacktrain.html">[Blog]</a></p>
+          </div>
+
+          <div className="technology-badges">
+            <h5 className="tech-badge-h5"><b> Technologies</b></h5>
+            <div className="techy-badge">C#</div>
+            <div className="techy-badge">SOAP API</div>
+            <div className="techy-badge">Azure-iot-suite</div>
+          </div>
         </div>
         : <div></div>
       }
 
         </div>
         <div className="carousel">
-          <div className="thumb"><img src={battleships} onClick={() => setSelectedProj("battleships")} className={(selectedProj == "battleships") ? "selected-img" : "just-proj-img"}/></div>
-          <div className="thumb"><img src={glance} onClick={() => setSelectedProj("glance")} className={(selectedProj == "glance") ? "selected-img" : "just-proj-img"}/></div>
           <div className="thumb"><img src={crispr} onClick={() => setSelectedProj("crispr")} className={(selectedProj == "crispr") ? "selected-img" : "just-proj-img"}/></div>
+          <div className="thumb"><img src={glance} onClick={() => setSelectedProj("glance")} className={(selectedProj == "glance") ? "selected-img" : "just-proj-img"}/></div>
+          <div className="thumb"><img src={onerail} onClick={() => setSelectedProj("onerail")} className={(selectedProj == "onerail") ? "selected-img" : "just-proj-img"}/></div>
+          <div className="thumb"><img src={battleships} onClick={() => setSelectedProj("battleships")} className={(selectedProj == "battleships") ? "selected-img" : "just-proj-img"}/></div>
           <div className="thumb"><img src={cluster} onClick={() => setSelectedProj("cluster")} className={(selectedProj == "cluster") ? "selected-img" : "just-proj-img"} /></div>
-
         </div>
       </div>
+      </div>
+
+      <div className="section-5">
+        <div className="connect-container">
+          <h2 className="connect"> Connect<a className="connect-dot">.</a> </h2>
+          <div className="connect-links">
+            <a href="mailto:spataruava@gmail.com" className="connect-email">spataruava@gmail.com </a>
+            <a className="connect-or">or</a>
+            <a href="https://www.linkedin.com/in/avaspataru/" className="connect-email"> /in/avaspataru/</a>
+          </div>
+        </div>
       </div>
 
 

@@ -11,7 +11,10 @@ import down from './dropdown-icon.png';
 import profile from './profile-glasses.jpeg';
 import beans from './coffe_beans.png';
 
-
+import glance from './glance.jpg';
+import battleships from './battleships.jpg';
+import crispr from './crispr-analyzer-cover.jpg';
+import cluster from './cluster.jpg';
 
 function App() {
 
@@ -20,6 +23,7 @@ function App() {
   const executeScroll = () => {  scrollToRef(myRefS2) }
 
   const [selectedWork, setSelectedWork]  = useState("fb")
+  const [selectedProj, setSelectedProj] = useState("battleships")
 
   return (
     <div className="container">
@@ -154,12 +158,109 @@ function App() {
       </div>
 
       <div className="section-4">
-      <div className="about-me-text">
-      <h2> <a className="colourful-strong"> <a className="size2"> Some of the cool stuff I've done.</a> </a></h2>
-      <a className="colourful"><p> Coming soon... This is still a work in progress. </p></a>
-      </div>
-      </div>
+      <div className="about-projects-text">
+        <h2> <a className="colourful-strong"> <a className="size2"> Some of the stuff I've done.</a> </a></h2>
+        <div className="project-details">
+        {(selectedProj == "battleships") ?
+        <div className="inside-project-details">
+          <div className="project-details-header">
+            <h4><b>Probabilistic Battleships</b> </h4>
+            <h5>Hack Cambridge January 2019 </h5>
+          </div>
 
+          <div className="project-details-text">
+            <ul className="job-points">
+            <p className="job-description"><li>As part of Improbable's challenge at the Hackathon, we had to build an AI that would play a hidden-state game in just one night. We actually won the challenge and qualified in the overall final! </li> </p>
+            <p className="job-description"><li>Our solution consisted of two AIs. One using Keanu (Improbable's own probabilistic programming language) and one using a rule-based heuristic. Both algorithms performed very well and we showed that the scores from our heuristic actually resembeled the true probabilities. </li></p>
+            <p className="job-description"><li>My contribution was especially in building the front-end and overseeing the full pipeline of work. Our interface allowed for the user to place the battleships wherever they wished and then run the two algorithms (either in parallel or one-by-one) observing the probabilities.</li></p>
+            </ul>
+          </div>
+
+
+          <div className="project-details-links">
+            <h5><b> Read more </b></h5>
+            <p>Article about the challenge<a href="https://improbable.io/blog/improbable-at-hack-cambridge-4d-2019">[Link]</a></p>
+            <p>Description of our solution<a href="https://devpost.com/software/battlereeves">[Devpost]</a></p>
+            <p>Source code<a href="https://github.com/alexmotoc/hack-cambridge">[GitHub]</a></p>
+          </div>
+        </div>
+        : (selectedProj == "glance") ?
+        <div className="inside-project-details">
+          <div className="project-details-header">
+            <h4><b>Glance - a search engine for code</b> </h4>
+            <h5>Hack Cambridge January 2020 </h5>
+          </div>
+
+          <div className="project-details-text">
+            <ul className="job-points">
+            <p className="job-description"><li>Glance behaves like Google, but for code. It's biggest advantage is that it is optimized for code search, ensuring that if someone had ever published code similar to what you want, you can find it!</li> </p>
+            <p className="job-description"><li>There are two ways of using this, you either enter a regular expression and your language of choice, to get any code snippets that match, or you enter a function name and you get all the functions with similar namings. This is especially useful for implementations of common util functions. The search engine also had other nice functionalities embedded such as spelling corrections.</li></p>
+            </ul>
+          </div>
+
+
+          <div className="project-details-links">
+            <h5><b> Read more </b></h5>
+            <p>Description of our solution<a href="https://devpost.com/software/glance-5u2arx">[Devpost]</a></p>
+            <p>Source code for the interface<a href="https://github.com/avaspataru/hackcambridge101">[GitHub]</a></p>
+          </div>
+        </div>
+        : (selectedProj == "crispr") ?
+        <div className="inside-project-details">
+          <div className="project-details-header">
+            <h4><b>CRISPR Analyzer</b> </h4>
+            <h5>MSc Thesis Summer 2020</h5>
+          </div>
+
+          <div className="project-details-text">
+            <ul className="job-points">
+            <p className="job-description"><li>A web application which helps us investigate the importance of features in ML-based tools for CRISPR/Cas9 gRNA efficiency prediction. This was developed as part of an MSc project in 2020.</li> </p>
+            <p className="job-description"><li>The application has a number of models and datasets previously loaded. For each model and dataset pair (upon user selection), it can calculate the SHAP values of each feature. The SHAP values are a great way of measuring feature importance across models.</li></p>
+            <p className="job-description"><li>The SHAP values are then used to generate various plots or to compare two or more models on either or both datasets. This is done by generating a positional plot which has information from all the selected models.</li></p>
+            </ul>
+          </div>
+
+
+          <div className="project-details-links">
+            <h5><b> Read more </b></h5>
+            <p>Backend extra functionality <a href="https://github.com/avaspataru/SHAP-Value-Plotting-for-CRISPR-tools">[GitHub]</a></p>
+            <p>Source code<a href="https://github.com/avaspataru/CRISPR-Analyzer">[GitHub]</a></p>
+          </div>
+        </div>
+        : (selectedProj == "cluster") ?
+        <div className="inside-project-details">
+          <div className="project-details-header">
+            <h4><b>Cluster Insight</b> </h4>
+            <h5>Undergraduate Dissertation 2019</h5>
+          </div>
+
+          <div className="project-details-text">
+            <ul className="job-points">
+            <p className="job-description"><li>Application which automatically generates a report for explaining the classification of cells from a DGE matrix, made via Seurat. It also automatically compares two classifications, cluster by cluster, based on their gene expressions and generates similarity numbers (based on a developed formula).</li> </p>
+            <p className="job-description"><li>Based on user uploaded files (containing the cell-type classification), and some user preferences, it generates a report containing much-needed information for understanding the classification. The tool has sucessfully been used to make sense of various groupings by looking at the genes these express and their roles.The application can also be used on two datasets, case in which it will contrast them and output similarity measures along the two individual reports.</li></p>
+              </ul>
+          </div>
+
+
+          <div className="project-details-links">
+            <h5><b> Read more </b></h5>
+            <p>Source code<a href="https://github.com/avaspataru/ClusterInsight">[GitHub]</a></p>
+            <p>Project report<a href="https://github.com/avaspataru/Dissertation/blob/master/Final%20Report.pdf">[PDF]</a></p>
+          </div>
+        </div>
+        : <div></div>
+      }
+
+        </div>
+        <div className="carousel">
+          <div className="thumb"><img src={battleships} onClick={() => setSelectedProj("battleships")} className={(selectedProj == "battleships") ? "selected-img" : "just-proj-img"}/></div>
+          <div className="thumb"><img src={glance} onClick={() => setSelectedProj("glance")} className={(selectedProj == "glance") ? "selected-img" : "just-proj-img"}/></div>
+          <div className="thumb"><img src={crispr} onClick={() => setSelectedProj("crispr")} className={(selectedProj == "crispr") ? "selected-img" : "just-proj-img"}/></div>
+          <div className="thumb"><img src={cluster} onClick={() => setSelectedProj("cluster")} className={(selectedProj == "cluster") ? "selected-img" : "just-proj-img"} /></div>
+
+        </div>
+      </div>
+      </div>
 
 
     </div>

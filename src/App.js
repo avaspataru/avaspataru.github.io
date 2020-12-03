@@ -29,6 +29,13 @@ function App() {
   return (
     <div className="container">
       <div className="section">
+
+          <div className="social">
+              <a href="https://www.linkedin.com/in/avaspataru/" ><img src={linkedin} className="social-icon" /></a>
+              <a href="https://github.com/avaspataru"><img src={github} className="social-icon" /></a>
+              <a href="https://www.facebook.com/ava.spataru/"><img src={facebook} className="social-icon" /></a>
+              <a href="mailto:spataruava@gmail.com"><img src={email} className="social-icon" /></a>
+          </div>
           <div className="welcome-text">
             <h1> Hi. I'm Ava! </h1>
 
@@ -46,12 +53,7 @@ function App() {
             <img src={down} className="down-icon anim-fadein" onClick={executeScroll} />
           </div>
 
-          <div className="social">
-              <a href="https://www.linkedin.com/in/avaspataru/" ><img src={linkedin} className="social-icon" /></a>
-              <a href="https://github.com/avaspataru"><img src={github} className="social-icon" /></a>
-              <a href="https://www.facebook.com/ava.spataru/"><img src={facebook} className="social-icon" /></a>
-              <a href="mailto:spataruava@gmail.com"><img src={email} className="social-icon" /></a>
-          </div>
+
       </div>
 
       <div className="section-2" ref={myRefS2}>

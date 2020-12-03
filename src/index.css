@@ -7,6 +7,7 @@ body {
   margin: 0;
   font-family: 'Noto Sans JP', sans-serif;;
   font-size:14px;
+  will-change: opacity;
 }
 
 h1{
@@ -436,6 +437,7 @@ h2{
   width:100%;
 
   background-color: #f4e7d9;
+  will-change: opacity;
   /*background-color:	#eedcc6;*/
 }
 
@@ -444,11 +446,11 @@ h2{
   width:100%;
 
   /*background-color: #faf3ed;*/
-  background-image:url("./end.jpg");
+  background-image:url("./end2.jpg");
   backdrop-filter: blur(8px);
 
   background-size: cover;
-  background-position: top right;
+  background-position: bottom center;
   background-repeat: no-repeat;
 }
 
@@ -466,6 +468,7 @@ h2{
   text-align: justify;
   margin-top: auto;
   margin-bottom:auto;
+  will-change: opacity;
 
 }
 
@@ -532,6 +535,8 @@ h2{
   display: inline-block;
   width: 30%;
 
+  will-change: opacity;
+
   bottom: 0;
   height:85%;
 
@@ -554,14 +559,14 @@ h2{
   width:70%;
   margin-left:auto;
   margin-right:auto;
-  opacity: 50%;
+  opacity: 0.5;
 }
 
 .just-proj-img:hover{
   position:relative;
   display:table-cell;
   width:70%;
-  opacity:75%;
+  opacity:0.75;
   margin-left:auto;
   margin-right:auto;
   }
@@ -603,7 +608,6 @@ h2{
   font-size: 9pt;
   margin: 0px;
   color:#9e495e;
-  opacity: 70%;
 }
 
 .project-details-text{
@@ -664,7 +668,7 @@ h2{
 .connect-container{
   position: relative;
   display: block;
-  top: 25%;
+  top: 20%;
   text-align:center;
   width:100%;
   padding:0;
@@ -709,4 +713,31 @@ h2{
 .connect-or{
   color: #c8a594;
   font-size:12pt;
+}
+
+
+@media screen and (max-width: 500px) {
+  .about-me-pic-container {
+    display: none;
+  }
+
+  .social{
+    top: 0%;
+    bottom: 0px;
+  }
+
+}
+
+@media screen and (max-width: 700px) {
+  .moving-text-container h2{
+    display: block;
+  }
+
+  .welcome-text{
+    width:60%;
+  }
+
+  .moving-text{
+    padding-left: 0px;
+  }
 }

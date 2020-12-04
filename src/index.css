@@ -570,6 +570,7 @@ h2{
   margin-left:auto;
   margin-right:auto;
   opacity: 0.5;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .just-proj-img:hover{
@@ -579,6 +580,8 @@ h2{
   opacity:0.75;
   margin-left:auto;
   margin-right:auto;
+
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
 
 
@@ -588,6 +591,7 @@ h2{
   width:80%;
   margin-left:auto;
   margin-right:auto;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   }
 
 
@@ -605,6 +609,12 @@ h2{
   overflow-y: scroll;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
+
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.project-details::-webkit-scrollbar {
+  display: none;
 }
 
 .project-details-header{

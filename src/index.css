@@ -91,6 +91,9 @@ a{
   background-size: cover; /* or contain depending on what you want */
   background-position: center center;
   background-repeat: no-repeat;
+  overflow-y: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 
@@ -753,6 +756,10 @@ h2{
 @media screen and (max-width: 1000px){
   .about-me-pic-container {
     width:0%;
+    display: none;
+  }
+  .about-me-pic{
+    display: none;
   }
   .about-me-text-container{
     width:100%;

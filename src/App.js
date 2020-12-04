@@ -57,6 +57,7 @@ function App() {
       </div>
 
       <div className="section-2" ref={myRefS2}>
+        <div className="about-me-text-container">
         <div className="about-me-text">
 
           <h2> <a className="colourful-strong"> <a className="size2"> A little bit about me.</a> </a></h2>
@@ -74,6 +75,7 @@ function App() {
           The project involved analysing the impact of chemotherapy on ovarian cancer data  and it proved to be a great success! After this I wanted to try out research in the field once more and pursued my masters dissertation in analysing important factors for CRISPR experiment design. I've also taken a course in
           Computational Biology from the department of Statistics in Oxford and a Bioinformatics introduction course from UCSD. I've been doing as much as I can in my spare time and I hope that the impact I have will help bring forward great solutions. </p>
 
+        </div>
         </div>
         <div className="about-me-pic-container">
           <img src={profile} className="profile-pic"/>

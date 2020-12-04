@@ -232,36 +232,47 @@ h2{
   width:100%;
 }
 
+.about-me-text-container{
+  float:left;
+  position: relative;
+  width: 60%;
+  height: 100%;
+  display: inline-block;
+}
 
 .about-me-text{
-
-    float:left;
-    top: 2%;
     position: relative;
-    width: 600px;
-    display: inline-block;
+    display: block;
+    width: 80%;
     color: #eedbc5;
-    margin-left:7%;
     text-align: justify;
-    margin-top: auto;
-    margin-bottom:auto;
+    margin-left: auto;
+    margin-right: auto;
+
+    top: 50%;
+    transform: translate(0%, -50%);
 }
 
 .about-me-pic-container{
 
   float:right;
+  width: 40%;
+  height:100%;
+
   position:relative;
   display:inline-block;
-  top:20%;
-  margin-right: 7%;
-  margin-top: auto;
-  margin-bottom:auto;
 }
 
 .profile-pic{
-  width:400px;
+  display: block;
+  width: 400px;
   border-radius: 50%;
-
+  margin-left: auto;
+  margin-right: auto;
+  /* vertical-align: middle; */
+  top: 50%;
+  position: relative;
+  transform: translate(0%, -50%);
 }
 
 .full-width-container{
@@ -717,9 +728,6 @@ h2{
 
 
 @media screen and (max-width: 500px) {
-  .about-me-pic-container {
-    display: none;
-  }
 
   .social{
     top: 0%;
@@ -739,5 +747,14 @@ h2{
 
   .moving-text{
     padding-left: 0px;
+  }
+}
+
+@media screen and (max-width: 1000px){
+  .about-me-pic-container {
+    width:0%;
+  }
+  .about-me-text-container{
+    width:100%;
   }
 }
